@@ -1,7 +1,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 
 (package-initialize)
 (unless package-archive-contents
@@ -62,6 +62,9 @@
 (show-paren-mode t)
 (tool-bar-mode -1)
 (blink-cursor-mode -1)
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
