@@ -66,6 +66,13 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+;; https://stackoverflow.com/questions/3631220/fix-to-get-smooth-scrolling-in-emacs
+(setq redisplay-dont-pause t
+      scroll-margin 1
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
+
 ;; https://www.emacswiki.org/emacs/BackupDirectory#toc2
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
